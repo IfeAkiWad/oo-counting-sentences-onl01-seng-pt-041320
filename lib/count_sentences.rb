@@ -15,9 +15,9 @@ class String
   end
 
   def count_sentences
-binding.pry
+# binding.pry
     self.split(/\.|\?|\!/).count
     new_arr = self.split(/\.|\?|\!/)
-
+    new_arr.reject(&:empty?)
   end
 end
