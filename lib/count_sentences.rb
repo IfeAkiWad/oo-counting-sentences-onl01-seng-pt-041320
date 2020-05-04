@@ -18,6 +18,6 @@ class String
 # binding.pry
     self.split(/\.|\?|\!/).count
     new_arr = self.split(/\.|\?|\!/)
-    new_arr.reject(&:empty?)
+    new_arr.reject(&:empty?).count
   end
 end
